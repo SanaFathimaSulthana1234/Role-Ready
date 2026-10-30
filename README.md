@@ -1,34 +1,36 @@
-# RoleReady – Job Readiness & Skill Gap Tracker
+RoleReady – Job Readiness & Skill Gap Tracker
 
-RoleReady is a full-stack web application that helps students identify job-specific skill gaps, track their learning progress, and prepare for their target careers through personalized skill checklists and progress tracking.
+RoleReady is a web-based application designed to help students identify job-specific skill gaps, track learning progress, and prepare for their target careers through personalized skill checklists and progress tracking.
 
-## Features
+Features
 
-- Identify skills required for target job roles.
-- Track learning progress and skill completion.
-- Identify skill gaps and areas for improvement.
-- Organize career preparation in one place.
-- Store application data using a database.
+- Identify skills required for target job roles
+- Track learning progress and skill completion
+- Identify skill gaps and areas for improvement
+- Organize career preparation in one place
+- Store application data using a database
 
-## Technologies Used
+Technologies Used
 
-**Frontend**
-- React.js
-- JavaScript
+Frontend
+
+- React
+- Vite
 - HTML
 - CSS
-- Vite
+- JavaScript
 
-**Backend**
+Backend
+
 - Node.js
 - Express.js
 
-**Database**
-- MySQL / SQL
+Database
 
-## Project Structure
+- MySQL
 
-```text
+Project Structure
+
 Role-Ready/
 ├── frontend/
 │   ├── public/
@@ -40,51 +42,40 @@ Role-Ready/
 │   ├── package.json
 │   └── index.html
 ├── backend/
-│   ├── server.js
 │   ├── db.js
+│   ├── server.js
 │   ├── package.json
 │   └── package-lock.json
 ├── database/
 │   └── roleready.sql
 └── README.md
-```
 
-## Getting Started
+Database Setup
 
-### Prerequisites
-- Node.js and npm
-- MySQL
-- A code editor such as Visual Studio Code
+1. Start your MySQL server.
+2. Open phpMyAdmin or your preferred MySQL client.
+3. Create the required database.
+4. Import the provided "roleready.sql" file.
+5. Configure the backend database connection using environment variables.
 
-### Installation
+Running the Project
 
-1. Clone the repository:
+Backend
 
-   ```bash
-   git clone https://github.com/SanaFathimaSulthana1234/Role-Ready.git
-   ```
+Open a terminal in the backend folder and run:
 
-2. Install frontend dependencies:
+npm install
+node server.js
 
-   ```bash
-   cd Role-Ready/frontend
-   npm install
-   ```
+Frontend
 
-3. Install backend dependencies:
+Open another terminal in the frontend folder and run:
 
-   ```bash
-   cd ../backend
-   npm install
-   ```
+npm install
+npm run dev
 
-4. Configure your database connection using environment variables.
+Open the local URL displayed by Vite in your browser.
 
-5. Import `database/roleready.sql` into MySQL.
+Project Purpose
 
-6. Start the frontend and backend using the commands configured in their respective `package.json` files.
-
-## Purpose
-
-RoleReady aims to help students prepare for software engineering and other technology careers by making skill development more organized and measurable.
-
+RoleReady aims to help students prepare for their target careers by identifying skill gaps and making learning progress easier to organize and track.
