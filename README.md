@@ -1,36 +1,34 @@
-RoleReady – Job Readiness & Skill Gap Tracker
+# RoleReady – Job Readiness & Skill Gap Tracker
 
 RoleReady is a web-based application designed to help students identify job-specific skill gaps, track learning progress, and prepare for their target careers through personalized skill checklists and progress tracking.
 
-Features
+## Features
 
 - Identify skills required for target job roles
 - Track learning progress and skill completion
 - Identify skill gaps and areas for improvement
 - Organize career preparation in one place
-- Store application data using a database
+- Monitor progress through personalized checklists
 
-Technologies Used
+## Technologies Used
 
-Frontend
-
+### Frontend
 - React
 - Vite
 - HTML
 - CSS
 - JavaScript
 
-Backend
-
+### Backend
 - Node.js
 - Express.js
 
-Database
-
+### Database
 - MySQL
 
-Project Structure
+## Project Structure
 
+```text
 Role-Ready/
 ├── frontend/
 │   ├── public/
@@ -40,6 +38,7 @@ Role-Ready/
 │   │   ├── index.css
 │   │   └── main.jsx
 │   ├── package.json
+│   ├── package-lock.json
 │   └── index.html
 ├── backend/
 │   ├── db.js
@@ -49,33 +48,38 @@ Role-Ready/
 ├── database/
 │   └── roleready.sql
 └── README.md
+```
 
-Database Setup
+## Database Setup
 
-1. Start your MySQL server.
+1. Start the MySQL server.
 2. Open phpMyAdmin or your preferred MySQL client.
 3. Create the required database.
-4. Import the provided "roleready.sql" file.
-5. Configure the backend database connection using environment variables.
+4. Import the provided `roleready.sql` file.
+5. Configure the backend database connection.
 
-Running the Project
+## Running the Project
 
-Backend
+### Backend
 
 Open a terminal in the backend folder and run:
 
+```bash
 npm install
 node server.js
+```
 
-Frontend
+### Frontend
 
 Open another terminal in the frontend folder and run:
 
+```bash
 npm install
 npm run dev
+```
 
 Open the local URL displayed by Vite in your browser.
 
-Project Purpose
+## Project Purpose
 
-RoleReady aims to help students prepare for their target careers by identifying skill gaps and making learning progress easier to organize and track.
+RoleReady aims to help students prepare for their target careers by identifying skill gaps, organizing learning activities, and tracking their progress towards job readiness.
